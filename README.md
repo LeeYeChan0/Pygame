@@ -4,16 +4,22 @@ pygame.init()
 
 
 screen_width = 480
+
 screen_height = 640
+
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 character = pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/캐릭터 ㅎㅎㅎㅎ.png')
 
 
 character_size = character.get_rect().size
+
 character_width = character_size[0]
+
 character_height = character_size[1]
+
 character_x_pos = (screen_width / 2) - (character_width / 2)
+
 character_y_pos = screen_height - character_height
 
 to_x = 0
