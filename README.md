@@ -28,10 +28,15 @@ to_y = 0
 character_speed = 0.6
 
 enemy =  pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/적.png')
+
 enemy_size = enemy.get_rect().size
+
 enemy_width = enemy_size[0]
+
 enemy_height = enemy_size[1]
+
 enemy_x_pos = (screen_width / 2) - (enemy_width / 2)
+
 enemy_y_pos = (screen_height / 2) - (enemy_height / 2)
 
 
@@ -49,8 +54,11 @@ total_time = 10
 start_ticks = pygame.time.get_ticks()
 
 
+
 running = True
+
 while running:
+
     dt = clock.tick(90)
 
     for event in pygame.event.get():
