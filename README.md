@@ -23,6 +23,7 @@ character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
 to_x = 0
+
 to_y = 0
 
 character_speed = 0.6
