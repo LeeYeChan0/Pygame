@@ -60,26 +60,26 @@ running = True
 
 while running:
 
-    dt = clock.tick(90)
+     dt = clock.tick(90)
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+     for event in pygame.event.get():
+         if event.type == pygame.QUIT:
+             running = False
 
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                to_x -= character_speed
-            elif event.key == pygame.K_RIGHT:
-                to_x += character_speed
-            elif event.key == pygame.K_UP:
-                to_y -= character_speed
-            elif event.key == pygame.K_DOWN:
-                to_y += character_speed
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                to_x = 0
-            elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
-                to_y = 0
+         if event.type == pygame.KEYDOWN:
+             if event.key == pygame.K_LEFT:
+                 to_x -= character_speed
+             elif event.key == pygame.K_RIGHT:
+                 to_x += character_speed
+             elif event.key == pygame.K_UP:
+                 to_y -= character_speed
+             elif event.key == pygame.K_DOWN:
+                 to_y += character_speed
+         if event.type == pygame.KEYUP:
+             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
+                 to_x = 0
+             elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
+                 to_y = 0
 
         screen.fill((0,0,255))
  
