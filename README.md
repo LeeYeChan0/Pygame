@@ -4,28 +4,17 @@ pygame.init()
 
 
 screen_width = 480
-
 screen_height = 640
-
 screen = pygame.display.set_mode((screen_width, screen_height))
-
-
-background = pygame.image.load("C:/Users/lycha/OneDrive/바탕 화면/Python/Background.png")
-
 
 character = pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/캐릭터 ㅎㅎㅎㅎ.png')
 
 
 character_size = character.get_rect().size
-
 character_width = character_size[0]
-
 character_height = character_size[1]
-
 character_x_pos = (screen_width / 2) - (character_width / 2)
-
 character_y_pos = screen_height - character_height
-
 
 to_x = 0
 to_y = 0
@@ -33,15 +22,10 @@ to_y = 0
 character_speed = 0.6
 
 enemy =  pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/적.png')
-
 enemy_size = enemy.get_rect().size
-
 enemy_width = enemy_size[0]
-
 enemy_height = enemy_size[1]
-
 enemy_x_pos = (screen_width / 2) - (enemy_width / 2)
-
 enemy_y_pos = (screen_height / 2) - (enemy_height / 2)
 
 
@@ -60,9 +44,7 @@ start_ticks = pygame.time.get_ticks()
 
 
 running = True
-
 while running:
-
     dt = clock.tick(90)
 
     for event in pygame.event.get():
@@ -83,6 +65,8 @@ while running:
                 to_x = 0
             elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                 to_y = 0
+
+        screen.fill((0,0,255))
  
     character_x_pos += to_x * dt
     character_y_pos += to_y * dt
@@ -109,7 +93,7 @@ while running:
         print("충돌했어요")
         running = False
 
-    screen.blit(background, (0, 0))
+    
     screen.blit(character, (character_x_pos, character_y_pos))
     screen.blit(enemy, (enemy_x_pos, enemy_y_pos))
     
