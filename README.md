@@ -81,7 +81,7 @@ while running:
              elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                  to_y = 0
 
-         screen.fill((0,0,255))
+         screen.fill((0, 0, 255))
  
     character_x_pos += to_x * dt
     character_y_pos += to_y * dt
