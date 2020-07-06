@@ -16,7 +16,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 
  
 
-character = pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/캐릭터 ㅎㅎㅎㅎ.png')
+character = pygame.image.load('캐릭터 ㅎㅎㅎㅎ.png')
 
  
 
@@ -44,7 +44,7 @@ character_speed = 0.6
 
  
 
-enemy =  pygame.image.load('C:/Users/lycha/OneDrive/바탕 화면/Python/적.png')
+enemy =  pygame.image.load('적.png')
 
 enemy_size = enemy.get_rect().size
 
